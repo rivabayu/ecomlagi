@@ -11,10 +11,10 @@ const Hero = () => {
           {/*  */}
           <div className='font-semibold flex items-center'>
             <div className='flex w-10 h-[2px] bg-blue-500 mr-3'>
-            </div>BEST TREND
+            </div>BEST TECK
           </div>
           <h1 className='text-[70px] leading-[1.1] font-light mb-4'>AUTUMN SALE <br/>
-            <span className='font-semibold'>WOMEN'S</span>
+            <span className='font-semibold'>SMARTPHONE</span>
           </h1>
           <Link to={'/'} className="self-start uppercase font-semibold border-b-2 border-primary">
             Discover More

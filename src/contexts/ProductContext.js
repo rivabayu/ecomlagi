@@ -7,12 +7,13 @@ export const ProductContext = createContext();
     const [products, setProducts] = useState([]);
     useEffect (() => {
       const fetchProducts = async () => {
-        const response = await fetch('https://fakestoreapi.com/products');
+        const response = await fetch('https://dummyjson.com/products/?limit=20&skip=40');
         const data = await response.json();
-        setProducts(data);
+        setProducts(data.products);
       };
       fetchProducts();
     }, []);
+
     return <ProductContext.Provider value={{products}}>{children}</ProductContext.Provider>;
   }
 

@@ -18,13 +18,13 @@ const ProductDetails = () => {
     return <section>Loading...</section>
   }
 
-  const{ title, price, description, image} =product;
+  const{ title, price, description} =product;
   return(
     <section className='pt-32 pb-12 lg:py-32 h-screen items-center'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row items-center'>
           <div className='flex flex-1 justify-center items-center mb-8 lg:mb-0 '>
-            <img className='max-w-[200px] lg:max-w-sm' src={image} alt=""/>
+            <img className='max-w-[200px] lg:max-w-sm' src={product.images[0]} alt=""/>
             </div>
           <div className='flex-1 text-center lg:text-left'>
             <h1 className='text-3xl font-medium mb-2 max-w-[450px] mx-auto lg:mx-0'>{title}
@@ -40,9 +40,6 @@ const ProductDetails = () => {
     </section>
   )
 
-  console.log(product)
-
-  return <div>Product Details Page</div>;
 };
 
 export default ProductDetails;
